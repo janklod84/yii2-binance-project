@@ -1,0 +1,10 @@
+<?php 
+/**
+ * Get access to internal server PHP 
+ * By default you can run server http://localhost:8080
+ * Or you can lunch server with other port for example :>php server 8090
+*/
+
+$port = $argv[1] ?? '8080';
+exec(sprintf('php -S localhost:%s -t web -d display_errors=1', $port));
+exit;
