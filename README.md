@@ -2,18 +2,40 @@
     <a href="https://github.com/yiisoft" target="_blank">
         <img src="https://avatars0.githubusercontent.com/u/993323" height="100px">
     </a>
-    <h1 align="center">Yii 2 Basic Project Template</h1>
+    <h1 align="center">Yii 2 Binance Project</h1>
     <br>
 </p>
+===========================
+Скачать репозиторию через комманду:
+```
+git clone https://github.com/janklod84/yii2-binance-project.git
+```
+или 
+скачать на прямую (download)
 
-Yii 2 Basic Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
-rapidly creating small projects.
+===========================
+Установить данный проект через комманду:
+```
+composer install
+```
 
-The template contains the basic features including user login/logout and a contact page.
-It includes all commonly used configurations that would allow you to focus on adding new
-features to your application.
+===========================
+Далее запустить сервер на порт 8080 через комманду:
+```
+php yii serve
+```
 
-[![Latest Stable Version](https://img.shields.io/packagist/v/yiisoft/yii2-app-basic.svg)](https://packagist.org/packages/yiisoft/yii2-app-basic)
-[![Total Downloads](https://img.shields.io/packagist/dt/yiisoft/yii2-app-basic.svg)](https://packagist.org/packages/yiisoft/yii2-app-basic)
-[![Build Status](https://travis-ci.org/yiisoft/yii2-app-basic.svg?branch=master)](https://travis-ci.org/yiisoft/yii2-app-basic)
+или 
+просто можно выполнить коротку комманду 
+php server [ тогда приложение запуститься также на порт 8080 по умолчанию ]
 
+Тогда сайт будет доступен по данной ссылке:
+http://localhost:8080
+
+а можно запусить сервер с указанном порта:
+php server [тут_ваш_порт]
+например: 
+php server 8000
+
+Тогда сайт будет доступен по задано порта, в данном случае на порт 8000
+http://localhost:8000
