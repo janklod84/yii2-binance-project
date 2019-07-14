@@ -34,7 +34,7 @@ if(!function_exists('get_currency_symbol'))
      */
     function get_currency_symbol(BalanceInterface $balance)
     {
-        return $balance->getSymbol();
+        return $balance->symbol();
     }
 }
 
@@ -50,7 +50,7 @@ if(!function_exists('get_currency_value'))
      */
     function get_currency_value(BalanceInterface $balance)
     {
-        return $balance->getValue();
+        return $balance->value();
     }
 }
 

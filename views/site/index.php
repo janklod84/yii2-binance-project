@@ -21,17 +21,20 @@ use app\components\market\BalanceInterface;
                 'columns' => [
                     [
                         'label' => 'Валюта [Symbol]',
+                        /*
                         'value' =>  function (BalanceInterface $balance) {
                             return $balance->symbol();
                         }
-                        // 'value' => get_currency_symbol($balance)
+                        */
+                        'value' => get_currency_symbol($balance)
                     ],
                     [
                         'label' => 'Остаток [Value]',
+                        /*
                         'value' => function (BalanceInterface $balance) {
                             return $balance->value();
-                        }
-                        // 'value' => get_currency_value($balance)
+                        }*/
+                        'value' => get_currency_value($balance)
 
                     ],
                 ]
