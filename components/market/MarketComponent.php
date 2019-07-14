@@ -47,7 +47,7 @@ class MarketComponent implements Configurable
      */
      public function getService(string $name): CurrencyServiceInterface
      {
-         // тут проверяю если есть наличие такой сервис
+         // тут проверяю наличие сервис
          if($this->hasService($name))
          {
              // если он есть вернем его
