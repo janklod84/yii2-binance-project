@@ -5,21 +5,19 @@
     <h1 align="center">Yii 2 Binance Project</h1>
     <br>
 </p>
-===========================
-Скачать репозиторию через комманду:
-```
-git clone https://github.com/janklod84/yii2-binance-project.git
-```
+Скачать репозиторию через комманду
+
+    ```
+    git clone https://github.com/janklod84/yii2-binance-project.git
+    ```
 или 
 скачать на прямую (download)
 
-===========================
 Установить данный проект через комманду:
 ```
 composer install
 ```
 
-===========================
 Далее запустить сервер на порт 8080 через комманду:
 ```
 php yii serve
