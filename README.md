@@ -6,10 +6,9 @@
     <br>
 </p>
 Скачать репозиторию через команду
-
-    ```
-    git clone https://github.com/janklod84/yii2-binance-project.git
-    ```
+```
+git clone https://github.com/janklod84/yii2-binance-project.git
+```
 
 Установить данный проект через команду:
 ```
