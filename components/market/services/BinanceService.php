@@ -68,12 +68,4 @@ class BinanceService implements CurrencyServiceInterface
         return $this->api->balances($this->api->prices());
     }
 
-    /**
-    private function map_balances()
-    {
-        return array_map(function ($symbol, $data) {
-            array_push($this->balances, new Balance($symbol, $data['available']));
-        }, $this->get_balance_data($prices));
-    }
-    */
 }

@@ -14,6 +14,7 @@ use yii;
 
  * Class MarketComponent
  * Бирж = [англ.] Market.
+ * от туда следующее название компонент
  *
  * @package app\components\market
  */
@@ -75,9 +76,10 @@ class MarketComponent implements Configurable
      {
          foreach($config as $name => $class_name)
          {
+              // Lazy loading [Леневая загрузка] что бы не создавался личный объекта
               if(!isset($this->currency_services[$name]))
               {
-                  $this->currency_services[$name] = Yii::createObject($class_name);
+                   $this->currency_services[$name] = Yii::createObject($class_name);
               }
          }
      }
