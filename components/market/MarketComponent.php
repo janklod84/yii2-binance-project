@@ -47,8 +47,10 @@ class MarketComponent implements Configurable
      */
      public function getService(string $name): CurrencyServiceInterface
      {
+         // тут проверяю если есть наличие такой сервис
          if($this->hasService($name))
          {
+             // если он есть вернем его
              return $this->currency_services[$name];
          }
      }
@@ -77,8 +79,10 @@ class MarketComponent implements Configurable
          foreach($config as $name => $class_name)
          {
               // Lazy loading [Леневая загрузка] что бы не создавался личный объекта
+              // если объект не создан
               if(!isset($this->currency_services[$name]))
               {
+                   // тогда мы его создадим
                    $this->currency_services[$name] = Yii::createObject($class_name);
               }
          }
