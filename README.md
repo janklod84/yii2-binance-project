@@ -5,7 +5,9 @@
     <h1 align="center">Yii 2 Binance Project</h1>
     <br>
 </p>
-Скачать репозиторию через команду
+
+Скачать репозиторию через команду:
+
 ```
 git clone https://github.com/janklod84/yii2-binance-project.git
 ```
